@@ -50,8 +50,15 @@ console.log(active);
 
 //exersice5
 
+users.sort((a,b) => {
+  if (a.score < b.score) return 1;
+  else return -1;
+});
 
+console.log(users);
 
-   
+//exersice6 - Didn't get this correct (was supposed to put sum as a paramter and + it to user.score)
+let total = 0;
+let sum = users.reduce((users) => users.score += total);
 
-
+console.log(sum);
